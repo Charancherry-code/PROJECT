@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
 
     color: rgb(255, 0, 0);
 }
@@ -11,4 +11,81 @@ h1 {
 .content {
 
     background-color: rgb(144, 209, 255);
-}
+} */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .main {
+
+
+     display: flex;
+
+     align-items: center;
+     justify-content: center;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user {
+    color: #0077cc;
+    margin: 0 0 10px 0;
+  }
+  
+  .content {
+    margin: 0 0 15px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0056b3;
+    margin-right: 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  form {
+    display: inline;
+  }
+  
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #e60000;
+  }
+  
+  a[href$="/new"] {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }

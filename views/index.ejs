@@ -9,23 +9,31 @@
 <body>
     <h1 class = "heading"> QUORO POSTS</h1>
 
-    <% for(post of posts) { %>
-                 <div>
-            <h3 class = "user">@ <%= post.username %></h3>
+    
+                 <div class = "post">  
 
-            <h5 class = "content"> <%= post.content %> </h5>
+                    <% for(post of posts) { %>
+                        <div>
+                   <h3 class = "user">@ <%= post.username %></h3>
+       
+                   <h5 class = "content"> <%= post.content %> </h5>
+                </div>
+                   <br>
+       
+                   <a href="http://localhost:8080/posts/<%= post.id %>">  see in detail     </a> <br>
+                   <br>
+                   <a href="http://localhost:8080/posts/<%= post.id %>/edit">  edit  </a>
+       
+                                                   <form method="post" action="/posts/<%= post.id %>?_method=delete"> <br>
+                                                       
+                                                       <button> delete post</button> </form>
+                        
+               <% } %>
+               <br>
+       
 
-            <a href="http://localhost:8080/posts/<%= post.id %>">  see in detail     </a> <br>
-            <a href="http://localhost:8080/posts/<%= post.id %>/edit">  edit  </a>
 
-                                            <form method="post" action="/posts/<%= post.id %>?_method=delete">  
-                                                
-                                                <button> delete post</button> </form>
                  </div>
-        <% } %>
-        <br>
-
-      
 
         <br>
         <br>
